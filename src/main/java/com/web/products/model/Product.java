@@ -19,9 +19,12 @@ public class Product {
     @Id
     @GeneratedValue
     @Setter(AccessLevel.NONE)
+    @NotNull
     private UUID id;
+
     @NotBlank
     private String name;
+
     @NotNull
     private LocalDate dateCreated;
 }
