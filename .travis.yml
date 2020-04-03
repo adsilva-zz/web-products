@@ -1,0 +1,10 @@
+language: java
+jdk:
+  - openjdk11
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
