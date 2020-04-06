@@ -1,6 +1,12 @@
 language: java
 jdk:
   - openjdk11
+jobs:
+  include:
+    - stage: "JVM VERSION"
+      install: skip
+      script: java -version
+      jdk: openjdk8
 deploy:
   provider: pages
   skip_cleanup: true
